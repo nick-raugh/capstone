@@ -1,1 +1,3 @@
+git rm --cached phase1.txt
+git commit -m "remove phase1.txt"
 

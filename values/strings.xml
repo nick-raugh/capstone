@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Krypty</string>
+    <string name="market">Market</string>
+    <string name="home">Home</string>
+    <string name="interact">Interact</string>
+    <string name="settings">Settings</string>
+</resources>

@@ -9,6 +9,8 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+//comment test
+
 public class InteractActivity extends AppCompatActivity {
 
     @Override

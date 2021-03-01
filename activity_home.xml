@@ -7,6 +7,61 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+
+
+    <ImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userAvatar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="username\nName of the User" />
+
+
+    <TextView
+        android:id="@+id/accountsButton"
+        style="@style/MenuTextView"
+        android:layout_marginTop="36dp"
+        android:text="@string/accounts"
+        app:layout_constraintTop_toBottomOf="@id/userAvatar" />
+
+    <TextView
+        android:id="@+id/spotPricesButton"
+        style="@style/MenuTextView"
+        android:text="@string/prices"
+        app:layout_constraintTop_toBottomOf="@+id/accountsButton" />
+
+    <TextView
+        android:id="@+id/currenciesButton"
+        style="@style/MenuTextView"
+        android:text="@string/currencies"
+        app:layout_constraintTop_toBottomOf="@+id/spotPricesButton" />
+
+    <TextView
+        android:id="@+id/paymentMethodsButton"
+        style="@style/MenuTextView"
+        android:text="@string/payment_methods"
+        app:layout_constraintTop_toBottomOf="@+id/currenciesButton" />
+
+    <TextView
+        android:id="@+id/authorizationInfoButton"
+        style="@style/MenuTextView"
+        android:layout_marginBottom="16dp"
+        android:text="@string/authorization_info_button"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"/>
+		
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

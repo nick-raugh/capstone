@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coinbase.krypty.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/krypty_background"
+        android:alpha=".80"/>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/userAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/userInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/krona_one"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name of the User" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/accountsButton"
+            style="@style/MenuTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12sp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/krona_one"
+            android:gravity="center"
+            android:text="@string/accounts_and_data"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp"
+            app:layout_constraintTop_toBottomOf="@id/userAvatar" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".025"/>
+
+        <TextView
+            android:id="@+id/spotPricesButton"
+            style="@style/MenuTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/krona_one"
+            android:gravity="center"
+            android:text="@string/market_prices"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp"
+            app:layout_constraintTop_toBottomOf="@+id/accountsButton" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".025"/>
+
+        <TextView
+            android:id="@+id/interactButton"
+            style="@style/MenuTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/krona_one"
+            android:gravity="center"
+            android:text="@string/trade_and_interact"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp"
+            app:layout_constraintTop_toBottomOf="@+id/spotPricesButton" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".025"/>
+
+        <TextView
+            android:id="@+id/newsButton"
+            style="@style/MenuTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/krona_one"
+            android:gravity="center"
+            android:text="@string/news_label"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp"
+            app:layout_constraintTop_toBottomOf="@+id/interactButton" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".025"/>
+
+        <TextView
+            android:id="@+id/contactsButton"
+            style="@style/MenuTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/krona_one"
+            android:gravity="center"
+            android:text="@string/contacts"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp"
+            app:layout_constraintTop_toBottomOf="@+id/newsButton" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".025"/>
+
+        <TextView
+            android:id="@+id/currenciesButton"
+            style="@style/MenuTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/krona_one"
+            android:gravity="center"
+            android:text="@string/change_currency"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_nav" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
